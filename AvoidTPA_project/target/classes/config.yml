@@ -1,0 +1,67 @@
+# AvoidTPA configuration - editable
+settings:
+  teleport-delay-seconds: 5
+  send-cooldown-seconds: 30
+  request-expire-seconds: 30
+  cancel-on-move: true
+  gui-title: "Avoid Tpa"
+
+messages:
+  prefix: "&5Avoid &9Tpa &7> &f"
+  tpa-sent: "{prefix}&aYou sent a TPA request to {target}."
+  tpa-received: "{prefix}&e{requester} wants to teleport to you!"
+  tpahere-sent: "{prefix}&aYou sent a TPAhere request to {target}."
+  tpahere-received: "{prefix}&e{requester} wants you to teleport to them!"
+  accepted: "{prefix}&aAccepted. Teleporting in {delay}s..."
+  accepted-requester: "{prefix}&a{target} accepted your request. Teleporting in {delay}s..."
+  teleport-complete: "{prefix}&aTeleport complete!"
+  teleported-to: "{prefix}&aTeleported to {target}!"
+  denied: "{prefix}&cYou denied the request."
+  denied-requester: "{prefix}&c{target} denied your request."
+  no-pending: "{prefix}&cYou have no pending requests."
+  requester-offline: "{prefix}&cRequester is offline."
+  player-not-found: "{prefix}&cPlayer not found."
+  cannot-request-self: "{prefix}&cYou cannot request yourself."
+  cooldown-wait: "{prefix}&cYou must wait before sending another request."
+  request-expired: "{prefix}&cThe TPA request has expired."
+  request-expired-requester: "{prefix}&cYour TPA request to {target} expired."
+  gui-toggled: "{prefix}&fGUI is now: {status}"
+  movement-cancelled: "{prefix}&cTeleport cancelled due to movement!"
+  usage-tpa: "{prefix}&cUsage: /tpa <player>"
+  usage-tpahere: "{prefix}&cUsage: /tpahere <player>"
+
+world-icons:
+  world: GRASS_BLOCK
+  world_nether: NETHERRACK
+  world_the_end: END_STONE
+  spawn: AMETHYST_BLOCK
+  Spawn: AMETHYST_BLOCK
+
+gui:
+  title: "Avoid Tpa"
+  world-slot: 11
+  head-slot: 13
+  accept-slot: 15
+  deny-slot: 17
+  filler-material: GRAY_STAINED_GLASS_PANE
+  world-icon:
+    name: "&b{world}"
+    lore:
+      - "&7World icon"
+  player-head:
+    name: "&9{player}"
+    lore-tpa:
+      - "&7TPA request"
+    lore-tpahere:
+      - "&7TPA-HERE request"
+  accept-button:
+    material: LIME_CONCRETE
+    name: "&aConfirm"
+    lore:
+      - "&7Accept the request."
+      - "&7Teleports after {delay}s delay."
+  deny-button:
+    material: RED_CONCRETE
+    name: "&cCancel"
+    lore:
+      - "&7Deny the request."

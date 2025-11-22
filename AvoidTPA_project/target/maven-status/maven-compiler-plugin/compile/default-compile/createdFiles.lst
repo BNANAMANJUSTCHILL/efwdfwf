@@ -1,0 +1,12 @@
+com\bnana\GUIManager.class
+com\bnana\listeners\InventoryClickListener.class
+com\bnana\TPAStorage$Request.class
+com\bnana\commands\TPAHereCommand.class
+com\bnana\commands\TPAcceptCommand.class
+com\bnana\commands\TPACommand.class
+com\bnana\commands\TPAGUIToggleCommand.class
+com\bnana\TPAStorage.class
+com\bnana\commands\TPADenyCommand.class
+com\bnana\AvoidTPA.class
+com\bnana\ConfigManager.class
+com\bnana\commands\TPAcceptCommand$TeleportData.class
